@@ -86,7 +86,7 @@ export default function code1() {
         <ul>
         <li>First create a wordcloud(well, more like a box in this case) sized 500 by 500.</li>
         <li>Next, our wordcloud will be created using <icode>plt.imshow()</icode> (<icode>interpolation=&apos;bilinear&apos;</icode> just makes the words in the wordcloud easier to read).</li>
-        <li><icode>plt.axis("off")</icode> and <icode>plt.margins(x=0, y=0)</icode> make sure our wordcloud isn&apos;t displayed as a graph.</li>
+        <li><icode>plt.axis(&quot;off&quot;)</icode> and <icode>plt.margins(x=0, y=0)</icode> make sure our wordcloud isn&apos;t displayed as a graph.</li>
         <li>Finally, our wordcloud is displayed using <icode>plt.show()</icode>.</li>
         </ul>
         </div>

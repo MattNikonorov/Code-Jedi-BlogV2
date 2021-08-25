@@ -108,7 +108,7 @@ export default function code1() {
         <div className="cont">
           var element = await page.waitForXPath(&quot;put the stock price Xpath here&quot;)
           <br></br>
-          var price = await page.evaluate(element => element.textContent, element);
+          var price = await page.evaluate(element =&gt; element.textContent, element);
           <br></br>
           console.log(price);
         </div>
