@@ -63,7 +63,7 @@ export default function code1() {
         &#160;&#160;h3text = h3text + &apos; &apos; + x.text.strip()
         </div>
         </code>
-        <div className="content2"><i>This will first define the "h3text" string, then add every news headline to the string and seperate them with spaces.</i></div>
+        <div className="content2"><i>This will first define the <icode>h3text</icode> string, then add every news headline to the string and seperate them with spaces.</i></div>
         <hr align="center" width="60%" className="hr8"></hr>
         <div className="content2"><b>Before we make the wordcloud, you can check the news headlines by using </b><icode>print(h3text)</icode></div>
         <hr align="center" width="60%" className="hr8"></hr>
@@ -74,7 +74,7 @@ export default function code1() {
         <br></br>
         plt.imshow(wordcloud, interpolation=&apos;bilinear&apos;)
         <br></br>
-        plt.axis("off")
+        plt.axis(&quot;off&quot;)
         <br></br>
         plt.margins(x=0, y=0)
         <br></br>
@@ -85,9 +85,9 @@ export default function code1() {
         <b>Let me explain...</b>
         <ul>
         <li>First create a wordcloud(well, more like a box in this case) sized 500 by 500.</li>
-        <li>Next, our wordcloud will be created using "plt.imshow()" (<icode>interpolation=&apos;bilinear&apos;</icode> just makes the words in the wordcloud easier to read).</li>
+        <li>Next, our wordcloud will be created using <icode>plt.imshow()</icode> (<icode>interpolation=&apos;bilinear&apos;</icode> just makes the words in the wordcloud easier to read).</li>
         <li><icode>plt.axis("off")</icode> and <icode>plt.margins(x=0, y=0)</icode> make sure our wordcloud isn&apos;t displayed as a graph.</li>
-        <li>Finally, our wordcloud is displayed using "plt.show()".</li>
+        <li>Finally, our wordcloud is displayed using <icode>plt.show()</icode>.</li>
         </ul>
         </div>
         <hr align="center" width="60%" className="hr8"></hr>

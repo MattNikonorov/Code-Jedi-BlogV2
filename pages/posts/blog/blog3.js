@@ -9,31 +9,31 @@ export default function code1() {
         <div className="sub"><b>Here is a researched and handpicked list of the top 5 github projects essential for aspiring javascript developers!</b></div>
         <hr align="center" width="80%" className="hr9"></hr>
         <div className="content2"><ol>
-        <li>"Clean-code-javascript". Perhaps less essential for beginners, but definitely packed with great advice for javascript developers further along the line on how to make cleaner, more understandable and better structured code!
+        <li>&quot;Clean-code-javascript&quot;. Perhaps less essential for beginners, but definitely packed with great advice for javascript developers further along the line on how to make cleaner, more understandable and better structured code!
         <br></br>
         <a href="https://github.com/ryanmcdermott/clean-code-javascript">Clean-code-javascript</a>
         </li>
         <br></br>
         <hr align="center" width="60%" className="hr8"></hr>
-        <li>"Javascript-testing-best-practices" is a github project packed with great advice on javascript testing for frontend, backend and more!
+        <li>&quot;Javascript-testing-best-practices&quot; is a github project packed with great advice on javascript testing for frontend, backend and more!
         <br></br>
         <a href="https://github.com/goldbergyoni/javascript-testing-best-practices">Javascript-testing-best-practices</a>
         </li>
         <br></br>
         <hr align="center" width="60%" className="hr8"></hr>
-        <li>"33-js-concepts" is a great github project for beginners that tries to introduce you to 33 concepts every javascript developer should know.
+        <li>&quot;33-js-concepts&quot; is a great github project for beginners that tries to introduce you to 33 concepts every javascript developer should know.
         <br></br>
         <a href="https://github.com/leonardomso/33-js-concepts">33-js-concepts</a>
         </li>
         <br></br>
         <hr align="center" width="60%" className="hr8"></hr>
-        <li>"JavaScript-Style-Guide" is a comprehensive javascript guide perfect for beginners with over 100k stars on github!
+        <li>&quot;JavaScript-Style-Guide&quot; is a comprehensive javascript guide perfect for beginners with over 100k stars on github!
         <br></br>
         <a href="https://github.com/airbnb/javascript">JavaScript-Style-Guide</a>
         </li>
         <br></br>
         <hr align="center" width="60%" className="hr8"></hr>
-        <li>"javascript-algorithms" is a github project with 110k+ stars that puts a lot of effort into explaining and implementing algorithms and data structures in javascript, as well as add explanations and links to further readings.
+        <li>&quot;javascript-algorithms&quot; is a github project with 110k+ stars that puts a lot of effort into explaining and implementing algorithms and data structures in javascript, as well as add explanations and links to further readings.
         <br></br>
         <a href="https://github.com/trekhleb/javascript-algorithms">javascript-algorithms</a>
         </li>

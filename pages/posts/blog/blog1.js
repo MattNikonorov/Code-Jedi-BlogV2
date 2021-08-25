@@ -37,17 +37,17 @@ export default function code1() {
         x = cv.fit_transform(x)
         </code>
         <div className="content2">
-        <b>"WTH?" you might ask</b>
+        <b>&quot;WTH?&quot; you might ask</b>
         <br></br>
         To put it simply:
         <ul>
         <li>
-        The "CountVectorizer()" function counts the number of word occurrences in the headlines in order to find the difference between real and fake headlines. Without judging wether a news headline is real or fake by how plausible it sounds, you&apos;d probably agree that the main difference between real and fake headlines is the tone and the choice of words, a model like this can&apos;t judge news headlines based on how plausible they sound since it has no judgement of what sounds plausible or not, that&apos;s why, it&apos;s best bet at detecting real or fake headlines is by analyzing their tone and word choices.
-        "fit_transform()" then fits the x variable and transforms it from plain text into a list of word occurrences of all the words encountered from both real and fake headlines in order to differenciate them by their word choice, length and tone.
+        The <icode>CountVectorizer()</icode> function counts the number of word occurrences in the headlines in order to find the difference between real and fake headlines. Without judging wether a news headline is real or fake by how plausible it sounds, you&apos;d probably agree that the main difference between real and fake headlines is the tone and the choice of words, a model like this can&apos;t judge news headlines based on how plausible they sound since it has no judgement of what sounds plausible or not, that&apos;s why, it&apos;s best bet at detecting real or fake headlines is by analyzing their tone and word choices.
+        <icode>fit_transform()</icode> then fits the x variable and transforms it from plain text into a list of word occurrences of all the words encountered from both real and fake headlines in order to differenciate them by their word choice, length and tone.
         </li>
         <br></br>
         <li>
-        "fit_transform()" then fits the x variable and transforms it from plain text into a list of word occurrences of all the words encountered from both real and fake headlines in order to differenciate them by their word choice, length and tone.
+        <icode>fit_transform()"</icode> then fits the x variable and transforms it from plain text into a list of word occurrences of all the words encountered from both real and fake headlines in order to differenciate them by their word choice, length and tone.
         </li>
         </ul>
         </div>
@@ -64,14 +64,14 @@ export default function code1() {
         <b>Let me explain...</b>
         <ul>
         <li>
-        First of all, we split out dataset in train(80%) and test(20%) sets, and set the "random_state" to 42 to make sure we have the same train and test sets every time you run your script( the number 42 has no meaning, you can put any number )</li>
+        First of all, we split out dataset in train(80%) and test(20%) sets, and set the <icode>random_state</icode> to 42 to make sure we have the same train and test sets every time you run your script( the number 42 has no meaning, you can put any number )</li>
         <br></br>
         <li>
-        Next, we define our model using "MultinomialNB()", which is used for classifying data based on word counts.
+        Next, we define our model using <icode>MultinomialNB()</icode>, which is used for classifying data based on word counts.
         </li>
         <br></br>
         <li>
-        Finally, we fit our model with the "xtrain" and "ytrain" sets.
+        Finally, we fit our model with the <icode>xtrain</icode> and <icode>ytrain</icode> sets.
         </li>
         </ul>
         </div>
@@ -85,7 +85,7 @@ export default function code1() {
         Now to predict wether a news headline is real or not, add these lines of code to your script:
         </div>
         <code>
-        news_headline = "Atlantis discovered under the Atlantic Ocean!"
+        news_headline = &quot;Atlantis discovered under the Atlantic Ocean!&quot;
         <br></br>
         data = cv.transform([news_headline]).toarray()
         <br></br>
@@ -101,7 +101,7 @@ export default function code1() {
         Now let&apos;s take a random news headline from bbc news and see if our model classifies it as real:
         </div>
         <code>
-        news_headline = "Kathy Hochul: Who is New York&apos;s first female governor?"
+        news_headline = &quot;Kathy Hochul: Who is New York&apos;s first female governor?&quot;
         </code>
         <div className="i1"><Image src={Pic3}/></div>
         <div className="content2">

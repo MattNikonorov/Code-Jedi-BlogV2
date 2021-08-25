@@ -36,9 +36,9 @@ export default function code1() {
         </code>
         <div className="content2">
         <ul>
-        <li>First, we define "soup" as the innerHTML of the BBC news webpage.</li>
-        <li>Next, we define "headlines" as an array of all h3 tags found within the webpage.</li>
-        <li>Finally, paddle through the "headlines" array and display all of it&apos;s contents one by one ridding each element of it&apos;s outerHTML using the "text.strip()" method.
+        <li>First, we define <icode>soup</icode> as the innerHTML of the BBC news webpage.</li>
+        <li>Next, we define <icode>headlines</icode> as an array of all h3 tags found within the webpage.</li>
+        <li>Finally, paddle through the <icode>headlines</icode> array and display all of it&apos;s contents one by one ridding each element of it&apos;s outerHTML using the <icode>text.strip()</icode> method.
         Now if you run your script, your output should look something like this:</li>
         </ul>
         </div>

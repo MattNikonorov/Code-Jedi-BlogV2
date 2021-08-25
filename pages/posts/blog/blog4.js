@@ -98,15 +98,15 @@ export default function code1() {
         <div className="content2">A pop-up will appear on the right of your window, you will need to find the stock price element:</div>
         <div className="i1"><Image src={Pic2} /></div>
         <div className="content2">
-        Next, you will need to right click on the stock price element and click on "copy full Xpath".
-This will give us a way of accessing the stock price element:
+        Next, you will need to right click on the stock price element and click on &quot;copy full Xpath&quot;.
+        This will give us a way of accessing the stock price element:
         </div>
         <div className="i1"><Image src={Pic3} /></div>
         <hr align="center" width="60%" className="hr8"></hr>
         <div className="content2">Once we have the Xpath of the stock price element, we can add these 3 lines of code into our function:</div>
         <code>
         <div className="cont">
-          var element = await page.waitForXPath("put the stock price Xpath here")
+          var element = await page.waitForXPath(&quot;put the stock price Xpath here&quot;)
           <br></br>
           var price = await page.evaluate(element => element.textContent, element);
           <br></br>
@@ -140,7 +140,7 @@ This will give us a way of accessing the stock price element:
         <br></br>
         &#160;&#160;await page.goto(url);
         <br></br>
-        &#160;&#160;var element = await page.waitForXPath("put the stock price Xpath here")
+        &#160;&#160;var element = await page.waitForXPath(&quot;put the stock price Xpath here&quot;)
         <br></br>
         &#160;&#160;var price = await page.evaluate(element => element.textContent, element);
         <br></br>
@@ -153,17 +153,17 @@ This will give us a way of accessing the stock price element:
         <div className="content2">If you were to execute your current code, you will find that when going to the url that you defined earlier, a pop-up will appear:</div>
         <div className="i1"><Image src={Pic4} /></div>
         <div className="content2">
-        To get around this, plug these 2 lines of code into your function before defining the "element" variable:
+        To get around this, plug these 2 lines of code into your function before defining the &quot;element&quot; variable:
         </div>
         <code>
         <div className="cont">
-        var&#160;accept&#160;=&#160;("#consent-page&#160;>&#160;div&#160;>&#160;div&#160;>&#160;div&#160;>&#160;form&#160;>&#160;div.wizard-body&#160;>&#160;div.actions.couple&#160;>&#160;button");
+        var&#160;accept&#160;=&#160;(&quot;#consent-page&#160;>&#160;div&#160;>&#160;div&#160;>&#160;div&#160;>&#160;form&#160;>&#160;div.wizard-body&#160;>&#160;div.actions.couple&#160;>&#160;button&quot;);
         <br></br>
         await&#160;page.click(accept)
         </div>
         </code>
         <div className="content2">
-        This will locate the "Accept All" button and click it to make the popup go away.
+        This will locate the &quot;Accept All&quot; button and click it to make the popup go away.
         <br></br>
         <br></br>
         <b>Now you will have a working function which goes to your defined url, scrapes the latest Tesla stock price and prints it in your terminal.</b>
@@ -174,7 +174,7 @@ This will give us a way of accessing the stock price element:
         <div className="cont">
         for(var k = 1; k &#60; 2000; k++)&#123;
         <br></br>
-        &#160;&#160;var&#160;element&#160;=&#160;await&#160;page.waitForXPath("/html/body/div[1]/div/div/div[1]/div/div[2]/div/div/div[5]/div/div/div/div[3]/div[1]/div[1]/span[1]")
+        &#160;&#160;var&#160;element&#160;=&#160;await&#160;page.waitForXPath(&quot;/html/body/div[1]/div/div/div[1]/div/div[2]/div/div/div[5]/div/div/div/div[3]/div[1]/div[1]/span[1]&quot;)
         <br></br>
         &#160;&#160;var&#160;price&#160;=&#160;await&#160;page.evaluate(element&#160;=>&#160;element.textContent,&#160;element);
         <br></br>
