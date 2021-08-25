@@ -23,20 +23,20 @@ export default function Home() {
             <Link href="/posts/blog/blog1">
               <h3>Detect fake news headlines with python</h3>
             </Link>
-            <p>Let's build a simple python script that will detect fake news headlines as well as real ones!</p>
+            <p>Let&apos;s build a simple python script that will detect fake news headlines as well as real ones!</p>
           </div>
 
           <div className="card">
             <Link href="/posts/blog/blog2">
               <h3>Scrape news headlines with python in 10 lines of code!</h3>
             </Link>
-            <p>Today I'll show you a way to scrape news headlines in python in under 10 lines of code!</p>
+            <p>Today I&apos;ll show you a way to scrape news headlines in python in under 10 lines of code!</p>
           </div>
           <div className="card">
             <Link href="/posts/blog/blog5">
               <h3>Create a wordcloud of news headlines in python!</h3>
             </Link>
-            <p>Today, I'll be showing you a simple way to make a wordcloud of news headlines in python!</p>
+            <p>Today, I&apos;ll be showing you a simple way to make a wordcloud of news headlines in python!</p>
           </div>
           <hr align="center" width="50%"></hr>
         </div>
@@ -53,7 +53,7 @@ export default function Home() {
               <Link href="/posts/blog/blog4">
                 <h3>Scrape the latest stock prices with node.js and puppeteer!</h3>
               </Link>
-              <p>If you're looking into web-scraping with javascript, then I've got a great, simple project to start you off, because in this tutorial, I will be showing you guys how to scrape the latest Tesla stock prices using Node.js and puppeteer.</p>
+              <p>If you&apos;re looking into web-scraping with javascript, then I&apos;ve got a great, simple project to start you off, because in this tutorial, I&apos;ll be showing you guys how to scrape the latest Tesla stock prices using Node.js and puppeteer.</p>
             </div>
           </div>
         </div>

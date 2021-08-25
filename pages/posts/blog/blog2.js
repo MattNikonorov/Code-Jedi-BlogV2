@@ -6,31 +6,31 @@ export default function code1() {
   return (
     <div className="container"> 
         <h1>Scrape news headlines with python in 10 lines of code!</h1>
-        <div className="sub"><b>Today I'll show you a way to scrape news headlines in python in under 10 lines of code!</b></div>
+        <div className="sub"><b>Today I&apos;ll show you a way to scrape news headlines in python in under 10 lines of code!</b></div>
         <hr align="center" width="80%" className="hr9"></hr>
-        <div className="content"><b>Let's get started...</b></div>
+        <div className="content"><b>Let&apos;s get started...</b></div>
         <div className="content2">First of all, make sure to import these libraries at the beginning of your python script:</div>
         <code>
         import requests
         from bs4 import BeautifulSoup
-        For this tutorial, I'll be using BBC news as my news source, use these 2 lines of code to get it's url:
-        url='https://www.bbc.com/news'
+        For this tutorial, I&apos;ll be using BBC news as my news source, use these 2 lines of code to get it&apos;s url:
+        url=&apos;https://www.bbc.com/news&apos;
         response = requests.get(url)
         </code>
         <hr align="center" width="60%" className="hr8"></hr>
         <div className="content2">
-        Now we're ready to scrape using BeautifulSoup!
+        Now we&apos;re ready to scrape using BeautifulSoup!
 
         Head over to BBC news and inspect a news headline by right clicking and pressing inspect.
-        As you'll see, all news headlines are contained within an "h3" tag:</div>
+        As you&apos;ll see, all news headlines are contained within an "h3" tag:</div>
         <div className="i1"><Image src={Pic1} className="i1" /></div>
         <hr align="center" width="60%" className="hr8"></hr>
         <div className="content2">
         Now add these 4 lines of code to scrape and display all the h3 tags from BBC news:
         </div>
         <code>
-        soup = BeautifulSoup(response.text, 'html.parser')
-        headlines = soup.find('body').find_all('h3')
+        soup = BeautifulSoup(response.text, &apos;html.parser&apos;)
+        headlines = soup.find(&apos;body&apos;).find_all(&apos;h3&apos;)
         for x in headlines:
             print(x.text.strip())
         </code>
@@ -38,7 +38,7 @@ export default function code1() {
         <ul>
         <li>First, we define "soup" as the innerHTML of the BBC news webpage.</li>
         <li>Next, we define "headlines" as an array of all h3 tags found within the webpage.</li>
-        <li>Finally, paddle through the "headlines" array and display all of it's contents one by one ridding each element of it's outerHTML using the "text.strip()" method.
+        <li>Finally, paddle through the "headlines" array and display all of it&apos;s contents one by one ridding each element of it&apos;s outerHTML using the "text.strip()" method.
         Now if you run your script, your output should look something like this:</li>
         </ul>
         </div>

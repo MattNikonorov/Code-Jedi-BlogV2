@@ -16,7 +16,7 @@ export default function code1() {
         from sklearn.naive_bayes import MultinomialNB
       </code>
       <hr align="center" width="40%" className="hr8"></hr>
-      <div className="content2">For this machine learning project, I'll be using this dataset for training our model to detect real or fake news headlines.</div>
+      <div className="content2">For this machine learning project, I&apos;ll be using this dataset for training our model to detect real or fake news headlines.</div>
 
       <hr align="center" width="40%" className="hr8"></hr>
       <div className="content2">Now to start working with the data, load in the dataset and define the x and y variables:</div>
@@ -27,7 +27,7 @@ export default function code1() {
         <br></br>
         y = np.array(data["label"])
             </code>
-            <div className="content2"><i>x will be defined as the news headlines which we'd like our model to be trained and tested on
+            <div className="content2"><i>x will be defined as the news headlines which we&apos;d like our model to be trained and tested on
         <br></br>y will be the label( Fake or Real ) which we are going to predict</i></div>
         <hr align="center" width="40%" className="hr8"></hr>
         <div className="content2">Next, add these lines of code to your script:</div>
@@ -42,7 +42,7 @@ export default function code1() {
         To put it simply:
         <ul>
         <li>
-        The "CountVectorizer()" function counts the number of word occurrences in the headlines in order to find the difference between real and fake headlines. Without judging wether a news headline is real or fake by how plausible it sounds, you'd probably agree that the main difference between real and fake headlines is the tone and the choice of words, a model like this can't judge news headlines based on how plausible they sound since it has no judgement of what sounds plausible or not, that's why, it's best bet at detecting real or fake headlines is by analyzing their tone and word choices.
+        The "CountVectorizer()" function counts the number of word occurrences in the headlines in order to find the difference between real and fake headlines. Without judging wether a news headline is real or fake by how plausible it sounds, you&apos;d probably agree that the main difference between real and fake headlines is the tone and the choice of words, a model like this can&apos;t judge news headlines based on how plausible they sound since it has no judgement of what sounds plausible or not, that&apos;s why, it&apos;s best bet at detecting real or fake headlines is by analyzing their tone and word choices.
         "fit_transform()" then fits the x variable and transforms it from plain text into a list of word occurrences of all the words encountered from both real and fake headlines in order to differenciate them by their word choice, length and tone.
         </li>
         <br></br>
@@ -98,10 +98,10 @@ export default function code1() {
         <div className="i1"><Image src={Pic2}/></div>
         <hr align="center" width="40%" className="hr8"></hr>
         <div className="content2">
-        Now let's take a random news headline from bbc news and see if our model classifies it as real:
+        Now let&apos;s take a random news headline from bbc news and see if our model classifies it as real:
         </div>
         <code>
-        news_headline = "Kathy Hochul: Who is New York's first female governor?"
+        news_headline = "Kathy Hochul: Who is New York&apos;s first female governor?"
         </code>
         <div className="i1"><Image src={Pic3}/></div>
         <div className="content2">
@@ -109,7 +109,7 @@ export default function code1() {
         <br></br>
         <br></br>
         News headlines change all the time, and even though the dataset which we are using to train our model is a whopping 30MB worth of plain text, it is only about 50% accurate.
-        If you add <icode>print(model.score(xtest, ytest))</icode> to your script, you'll see that the accuracy score is ~80%, even though I've tested 40 news headlines from last week and got a 50% to 60% accuracy, that's because news headlines, news headline vocabulary and news headline topics change all the time.</div>
+        If you add <icode>print(model.score(xtest, ytest))</icode> to your script, you&apos;ll see that the accuracy score is ~80%, even though I&apos;ve tested 40 news headlines from last week and got a 50% to 60% accuracy, that&apos;s because news headlines, news headline vocabulary and news headline topics change all the time.</div>
         <hr align="center" width="40%" className="hr8"></hr>
         <div className="content2"><b>Nevertheless, I hope that you found this project interesting, and I see you in the next blog post ;)</b></div>
         <hr align="center" width="40%" className="hr8"></hr>
@@ -119,7 +119,7 @@ export default function code1() {
           <a>Back to home</a>
         </Link>
       </h3>
-      <div className="sub"><b>Let's build a simple python script that will detect fake news headlines as well as real ones!</b></div>
+      <div className="sub"><b>Let&apos;s build a simple python script that will detect fake news headlines as well as real ones!</b></div>
       <style jsx>{`
         .container {
           min-height: 100vh;

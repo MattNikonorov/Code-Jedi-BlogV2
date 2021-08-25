@@ -5,10 +5,10 @@ export default function code1() {
   return (
     <div className="container"> 
         <h1>Create a wordcloud of news headlines in python!</h1>
-        <div className="sub"><b>Today, I'll be showing you a simple way to make a wordcloud of news headlines in python!</b></div>
+        <div className="sub"><b>Today, I&apos;ll be showing you a simple way to make a wordcloud of news headlines in python!</b></div>
         <hr align="center" width="80%" className="hr9"></hr>
-        <div className="content2">If you haven't read <a href="https://dev.to/code_jedi/scrape-news-headlines-with-python-1go6">this tutorial</a> explaining how to scrape news headlines in python, make sure you do.
-        In summary, here's the code for scraping news headlines in python:</div>
+        <div className="content2">If you haven&apos;t read <a href="https://dev.to/code_jedi/scrape-news-headlines-with-python-1go6">this tutorial</a> explaining how to scrape news headlines in python, make sure you do.
+        In summary, here&apos;s the code for scraping news headlines in python:</div>
         <code>
         <div className="cont">
         import requests
@@ -16,14 +16,14 @@ export default function code1() {
         from bs4 import BeautifulSoup
         <br></br>
         <br></br>
-        url='https://www.bbc.com/news'
+        url=&apos;https://www.bbc.com/news&apos;
         <br></br>
         response = requests.get(url)
         <br></br>
         <br></br>
-        soup = BeautifulSoup(response.text, 'html.parser')
+        soup = BeautifulSoup(response.text, &apos;html.parser&apos;)
         <br></br>
-        headlines = soup.find('body').find_all('h3')
+        headlines = soup.find(&apos;body&apos;).find_all(&apos;h3&apos;)
         <br></br>
         for x in headlines:
         <br></br>
@@ -56,11 +56,11 @@ export default function code1() {
         <div className="content2">With</div>
         <code>
         <div className="cont">
-        h3text = ''
+        h3text = &apos;&apos;
         <br></br>
         for x in el:
         <br></br>
-        &#160;&#160;h3text = h3text + ' ' + x.text.strip()
+        &#160;&#160;h3text = h3text + &apos; &apos; + x.text.strip()
         </div>
         </code>
         <div className="content2"><i>This will first define the "h3text" string, then add every news headline to the string and seperate them with spaces.</i></div>
@@ -72,7 +72,7 @@ export default function code1() {
         <div className="cont">
         wordcloud = WordCloud(width=500, height=500, margin=0).generate(soup.get_text(h3text))
         <br></br>
-        plt.imshow(wordcloud, interpolation='bilinear')
+        plt.imshow(wordcloud, interpolation=&apos;bilinear&apos;)
         <br></br>
         plt.axis("off")
         <br></br>
@@ -85,8 +85,8 @@ export default function code1() {
         <b>Let me explain...</b>
         <ul>
         <li>First create a wordcloud(well, more like a box in this case) sized 500 by 500.</li>
-        <li>Next, our wordcloud will be created using "plt.imshow()" (<icode>interpolation='bilinear'</icode> just makes the words in the wordcloud easier to read).</li>
-        <li><icode>plt.axis("off")</icode> and <icode>plt.margins(x=0, y=0)</icode> make sure our wordcloud isn't displayed as a graph.</li>
+        <li>Next, our wordcloud will be created using "plt.imshow()" (<icode>interpolation=&apos;bilinear&apos;</icode> just makes the words in the wordcloud easier to read).</li>
+        <li><icode>plt.axis("off")</icode> and <icode>plt.margins(x=0, y=0)</icode> make sure our wordcloud isn&apos;t displayed as a graph.</li>
         <li>Finally, our wordcloud is displayed using "plt.show()".</li>
         </ul>
         </div>
@@ -97,7 +97,7 @@ export default function code1() {
         <i>Of course, your wordcloud will probably be quite different since news headlines change all the time.</i>
         </div>
         <hr align="center" width="60%" className="hr8"></hr>
-        <div className="content2"><h3>That's it for this Tutorial/Mini-project!</h3></div>
+        <div className="content2"><h3>That&apos;s it for this Tutorial/Mini-project!</h3></div>
 
 
         <hr align="center" width="60%" className="hr8"></hr>

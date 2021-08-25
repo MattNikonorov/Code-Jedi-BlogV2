@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from 'next/Link'
 import Image from 'next/image'
 import Pic1 from './/tsla6.png'
 import Pic2 from './/tsla7.png'
@@ -9,20 +9,20 @@ export default function code1() {
     <div className="container"> 
         <h1>Scrape the latest stock prices with node.js and puppeteer!</h1>
         <div className="sub"><b>Hey, fellow devs 👋</b>
-        If you're looking into web-scraping with javascript, then I've got a great, simple project to start you off, because in this tutorial, I will be showing you guys how to scrape the latest Tesla stock prices using Node.js and puppeteer.</div>
+        If you&apos;re looking into web-scraping with javascript, then I&apos;ve got a great, simple project to start you off, because in this tutorial, I will be showing you guys how to scrape the latest Tesla stock prices using Node.js and puppeteer.</div>
         <hr align="center" width="80%" className="hr9"></hr>
-        <div className="content2"><b>Let's get started</b>
+        <div className="content2"><b>Let&apos;s get started</b>
         </div>
         <div className="content2">
         First of all, you will need to install puppeteer using <icode>npm i puppeteer</icode>. 
         <br></br>
-        Now if you don't have npm, package.json and node_modules setup, here's a great tutorial on how to do so: <a href="https://www.sitepoint.com/npm-guide/">NPM install guide</a>.
+        Now if you don&apos;t have npm, package.json and node_modules setup, here&apos;s a great tutorial on how to do so: <a href="https://www.sitepoint.com/npm-guide/">NPM install guide</a>.
         <br></br>
         <br></br>
-        After you've installed puppeteer, create a new javascript file and require puppeteer on the first line:
+        After you&apos;ve installed puppeteer, create a new javascript file and require puppeteer on the first line:
         </div>
         <code>
-        const puppeteer = require('puppeteer');
+        const puppeteer = require(&apos;puppeteer&apos;);
         </code>
         <hr align="center" width="60%" className="hr8"></hr>
         <div className="content2">
@@ -30,7 +30,7 @@ export default function code1() {
         </div>
         <code>
         <div className="cont">
-        const puppeteer = require('puppeteer');
+        const puppeteer = require(&apos;puppeteer&apos;);
         <br></br>
         async function start() &#123;
         <br></br>
@@ -42,18 +42,18 @@ export default function code1() {
         </code>
         <hr align="center" width="60%" className="hr8"></hr>
         <div className="content2">
-        <b>Now we're ready to start scraping.</b>
+        <b>Now we&apos;re ready to start scraping.</b>
         <br></br>
         <br></br>
         First of all, you need to initiate a new browser instance, as well as define the url which your web-scraper is going to be visiting:
         </div>
         <code>
         <div className="cont">
-        const puppeteer = require('puppeteer');
+        const puppeteer = require(&apos;puppeteer&apos;);
         <br></br>
         async function start() &#123;
         <br></br>
-        &#160;&#160;const url = 'https://finance.yahoo.com/quote/TSLA?p=TSLA&.tsrc=fin-srch';
+        &#160;&#160;const url = &apos;https://finance.yahoo.com/quote/TSLA?p=TSLA&.tsrc=fin-srch&apos;;
         <br></br>
         &#160;&#160;const browser = await puppeteer.launch(&#123;
         <br></br>
@@ -71,11 +71,11 @@ export default function code1() {
         </div>
         <code>
         <div className="cont">
-        const puppeteer = require('puppeteer');
+        const puppeteer = require(&apos;puppeteer&apos;);
         <br></br>
         async function start() &#123;
         <br></br>
-        &#160;&#160;const url = 'https://finance.yahoo.com/quote/TSLA?p=TSLA&.tsrc=fin-srch';
+        &#160;&#160;const url = &apos;https://finance.yahoo.com/quote/TSLA?p=TSLA&.tsrc=fin-srch&apos;;
         <br></br>
         &#160;&#160;const browser = await puppeteer.launch(&#123;
         <br></br>
@@ -124,11 +124,11 @@ This will give us a way of accessing the stock price element:
         </b></div>
         <code>
         <div className="cont">
-        const puppeteer = require('puppeteer');
+        const puppeteer = require(&apos;puppeteer&apos;);
         <br></br>
         async function start() &#123;
         <br></br>
-        &#160;&#160;const url = 'https://finance.yahoo.com/quote/TSLA?p=TSLA&.tsrc=fin-srch';
+        &#160;&#160;const url = &apos;https://finance.yahoo.com/quote/TSLA?p=TSLA&.tsrc=fin-srch&apos;;
         <br></br>
         &#160;&#160;const browser = await puppeteer.launch(&#123;
         <br></br>
@@ -192,11 +192,11 @@ This will give us a way of accessing the stock price element:
         </i></div>
         <code>
         <div className="cont">
-        const puppeteer = require('puppeteer');
+        const puppeteer = require(&apos;puppeteer&apos;);
         <br></br>
         async function start() &#123;
         <br></br>
-        &#160;&#160;const url = 'https://finance.yahoo.com/quote/TSLA?p=TSLA&.tsrc=fin-srch';
+        &#160;&#160;const url = &apos;https://finance.yahoo.com/quote/TSLA?p=TSLA&.tsrc=fin-srch&apos;;
         <br></br>
         &#160;&#160;const browser = await puppeteer.launch(&#123;
         <br></br>
@@ -233,7 +233,7 @@ This will give us a way of accessing the stock price element:
         </div>
         </code>
         <div className="content2">
-        <h3>That's it for this web-scraping tutorial!</h3>
+        <h3>That&apos;s it for this web-scraping tutorial!</h3>
         <br></br>
         <br></br>
         Byeeeeeee 👋
