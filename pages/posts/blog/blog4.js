@@ -142,7 +142,7 @@ export default function code1() {
         <br></br>
         &#160;&#160;var element = await page.waitForXPath(&quot;put the stock price Xpath here&quot;)
         <br></br>
-        &#160;&#160;var price = await page.evaluate(element => element.textContent, element);
+        &#160;&#160;var price = await page.evaluate(element =&gt; element.textContent, element);
         <br></br>
         &#160;&#160;console.log(price);
         <br></br>
@@ -157,7 +157,7 @@ export default function code1() {
         </div>
         <code>
         <div className="cont">
-        var&#160;accept&#160;=&#160;(&quot;#consent-page&#160;>&#160;div&#160;>&#160;div&#160;>&#160;div&#160;>&#160;form&#160;>&#160;div.wizard-body&#160;>&#160;div.actions.couple&#160;>&#160;button&quot;);
+        var&#160;accept&#160;=&#160;(&quot;#consent-page&#160;&gt;&#160;div&#160;&gt;&#160;div&#160;&gt;&#160;div&#160;&gt;&#160;form&#160;&gt;&#160;div.wizard-body&#160;&gt;&#160;div.actions.couple&#160;&gt;&#160;button&quot;);
         <br></br>
         await&#160;page.click(accept)
         </div>
@@ -176,7 +176,7 @@ export default function code1() {
         <br></br>
         &#160;&#160;var&#160;element&#160;=&#160;await&#160;page.waitForXPath(&quot;/html/body/div[1]/div/div/div[1]/div/div[2]/div/div/div[5]/div/div/div/div[3]/div[1]/div[1]/span[1]&quot;)
         <br></br>
-        &#160;&#160;var&#160;price&#160;=&#160;await&#160;page.evaluate(element&#160;=>&#160;element.textContent,&#160;element);
+        &#160;&#160;var&#160;price&#160;=&#160;await&#160;page.evaluate(element&#160;=&gt;&#160;element.textContent,&#160;element);
         <br></br>
         &#160;&#160;console.log(price);
         <br></br>
@@ -208,15 +208,15 @@ export default function code1() {
         <br></br>
         &#160;&#160;await page.goto(url);
         <br></br>
-        &#160;&#160;var accept = ("#consent-page > div > div > div > form > div.wizard-body > div.actions.couple > button");
+        &#160;&#160;var accept = (&quot;#consent-page &gt; div &gt; div &gt; div &gt; form &gt; div.wizard-body &gt; div.actions.couple &gt; button&quot;);
         <br></br>
         &#160;&#160;await page.click(accept);
         <br></br>
         &#160;&#160;for(var k = 1; k &#60; 2000; k++)&#123;
         <br></br>
-        &#160;&#160;var element = await page.waitForXPath("/html/body/div[1]/div/div/div[1]/div/div[2]/div/div/div[5]/div/div/div/div[3]/div[1]/div[1]/span[1]");
+        &#160;&#160;var element = await page.waitForXPath(&quot;/html/body/div[1]/div/div/div[1]/div/div[2]/div/div/div[5]/div/div/div/div[3]/div[1]/div[1]/span[1]&quot;);
         <br></br>
-        &#160;&#160;var price = await page.evaluate(element => element.textContent, element);
+        &#160;&#160;var price = await page.evaluate(element =&gt; element.textContent, element);
         <br></br>
         &#160;&#160;console.log(price);
         <br></br>

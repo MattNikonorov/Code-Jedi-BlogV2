@@ -22,7 +22,7 @@ export default function code1() {
         Now we&apos;re ready to scrape using BeautifulSoup!
 
         Head over to BBC news and inspect a news headline by right clicking and pressing inspect.
-        As you&apos;ll see, all news headlines are contained within an "h3" tag:</div>
+        As you&apos;ll see, all news headlines are contained within an &quot;h3&quot; tag:</div>
         <div className="i1"><Image src={Pic1} className="i1" /></div>
         <hr align="center" width="60%" className="hr8"></hr>
         <div className="content2">

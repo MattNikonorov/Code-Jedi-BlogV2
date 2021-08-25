@@ -21,11 +21,11 @@ export default function code1() {
       <hr align="center" width="40%" className="hr8"></hr>
       <div className="content2">Now to start working with the data, load in the dataset and define the x and y variables:</div>
       <code>
-        data = pd.read_csv("news.csv")
+        data = pd.read_csv(&quot;news.csv&quot;)
         <br></br>
-        x = np.array(data["title"])
+        x = np.array(data[&quot;title&quot;])
         <br></br>
-        y = np.array(data["label"])
+        y = np.array(data[&quot;label&quot;])
             </code>
             <div className="content2"><i>x will be defined as the news headlines which we&apos;d like our model to be trained and tested on
         <br></br>y will be the label( Fake or Real ) which we are going to predict</i></div>
@@ -47,7 +47,7 @@ export default function code1() {
         </li>
         <br></br>
         <li>
-        <icode>fit_transform()"</icode> then fits the x variable and transforms it from plain text into a list of word occurrences of all the words encountered from both real and fake headlines in order to differenciate them by their word choice, length and tone.
+        <icode>fit_transform()</icode> then fits the x variable and transforms it from plain text into a list of word occurrences of all the words encountered from both real and fake headlines in order to differenciate them by their word choice, length and tone.
         </li>
         </ul>
         </div>
